@@ -55,3 +55,33 @@ Parameters
 	<tr> <td>help</td>   <td></td>              <td>Print HELP and exit</td> </tr>
 </table>
 
+
+IPC Status
+====================
+
+Reads IPC status performance data, using the command /usr/bin/ipcs.
+
+Files
+-----
+
+* ipc-status.pl
+* Metric.pm
+
+Typical EPA configuration
+-------------------------
+
+	introscope.epagent.plugins.stateless.names=APACHE
+	introscope.epagent.stateless.APACHE.command=perl ./epaplugins/ribomation/ipc-status.pl
+	introscope.epagent.stateless.APACHE.delayInSeconds=15
+
+Parameters
+----------
+
+<table>
+	<tr> <th>Parameter</th> <th>Default</th> <th>Description</th> </tr>
+	<tr> <td>prefix</td> <td>IPC Status</td>    <td>Metric root node name</td> </tr>
+	<tr> <td>debug</td>  <td></td>              <td>Enable DEBUG printouts to STDERR</td> </tr>
+	<tr> <td>help</td>   <td></td>              <td>Print HELP and exit</td> </tr>
+</table>
+
+
