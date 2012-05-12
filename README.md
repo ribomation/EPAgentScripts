@@ -17,7 +17,7 @@ Requirements
 General installation instructions
 ---------------------------------
 
-Grap the interesting Perl (*.pl) script from GitHub (https://github.com/ribomation/EPAgentScripts)
+Grab the interesting Perl (*.pl) script from GitHub (https://github.com/ribomation/EPAgentScripts)
 together with its dependent Perl modules (*.pm) and copy them into $epagent/epaplugins/ribomation.
 
 All scripts can be run on the command-line, to test them out before configuring EPA. All scripts
